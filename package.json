@@ -1,0 +1,21 @@
+{
+  "name": "englishnote-vercel",
+  "version": "1.0.0",
+  "description": "EnglishNote - Full-stack app deployable on Vercel",
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:api\"",
+    "dev:client": "cd client && npm start",
+    "dev:api": "vercel dev",
+    "start": "npm run build"
+  },
+  "keywords": [
+    "note-taking",
+    "vocabulary",
+    "ocr",
+    "english"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
