@@ -2,12 +2,6 @@
   "version": 2,
   "buildCommand": "cd client && npm install && npm run build",
   "installCommand": "npm install",
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs@18.17.0",
-      "maxDuration": 30
-    }
-  },
   "rewrites": [
     {
       "source": "/api/(.*)",
