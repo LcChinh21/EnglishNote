@@ -1,5 +1,5 @@
 import React from 'react';
-import '../pages/Pages.css';
+import '../../pages/Pages.css';
 
 function NoteList({ notes, onEdit, onDelete, onSelectNote }) {
   return (
