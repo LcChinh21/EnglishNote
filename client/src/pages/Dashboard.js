@@ -29,7 +29,7 @@ function Dashboard() {
     } else {
       fetchNotes({});
     }
-  }, [viewMode, fetchNotes]);
+  }, [viewMode, fetchNotes, currentWeek, currentYear, currentMonth]);
 
   const handleLogout = () => {
     logout();

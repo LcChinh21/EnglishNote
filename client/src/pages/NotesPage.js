@@ -8,8 +8,6 @@ import {
   getCurrentWeek,
   getCurrentMonth,
   getCurrentYear,
-  getWeekDates,
-  getMonthDates,
   getWeekLabel,
   getMonthLabel,
 } from '../utils/dateUtils';
@@ -38,7 +36,7 @@ function NotesPage() {
     } else {
       fetchNotes({});
     }
-  }, [filter, fetchNotes]);
+  }, [filter, fetchNotes, currentWeek, currentYear, currentMonth]);
 
   // Check if we're creating a new note
   useEffect(() => {
